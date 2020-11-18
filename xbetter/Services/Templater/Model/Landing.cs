@@ -10,6 +10,7 @@ namespace xbetter.Services.Templater.Model
         public string Host { get; set; }
         public string HostName { get; set; }
         public string RedirectLink { get; set; }
+        public string MetricaId { get; set; }
         public Header Header { get; set; }
         public Body Body { get; set; }
         public KeyRandom KeyRandom { get; set; }

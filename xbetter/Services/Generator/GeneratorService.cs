@@ -8,6 +8,7 @@ using xbetter.Services.Generator.Macs.H1;
 using xbetter.Services.Generator.Macs.Host;
 using xbetter.Services.Generator.Macs.HostName;
 using xbetter.Services.Generator.Macs.KeyRandom;
+using xbetter.Services.Generator.Macs.Metrika;
 using xbetter.Services.Generator.Macs.RedirectLink;
 using xbetter.Services.Generator.Macs.SiteName;
 using xbetter.Services.Generator.Macs.Title;
@@ -51,6 +52,7 @@ namespace xbetter.Services.Generator
             landing.Template = await _mediator.Send(new MacHostNameQuery(landing));
             landing.Template = await _mediator.Send(new MacRedirectLinkQuery(landing));
             landing.Template = await _mediator.Send(new MacKeyRandomQuery(landing));
+            landing.Template = await _mediator.Send(new MacMetrikaQuery(landing));
 
             return landing.Template;
         }

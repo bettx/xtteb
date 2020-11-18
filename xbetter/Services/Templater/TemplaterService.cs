@@ -51,6 +51,7 @@ namespace xbetter.Services.Templater
                 Host = _httpContext.HttpContext.Request.Host.Value,
                 HostName = _httpContext.HttpContext.Request.Host.Host,
                 RedirectLink = _doorsettings.redirect,
+                MetricaId = _doorsettings.metrika_id,
                 Header = new Header
                 {
                     Title = _doorsettings.title,
